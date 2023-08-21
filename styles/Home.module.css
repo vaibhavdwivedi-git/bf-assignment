@@ -1,0 +1,181 @@
+.main{
+  padding: 36px 84px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index:5;
+}
+
+.hero{
+  display:flex;
+  align-items: center;
+  gap:16px;
+}
+
+.logo{
+  width: 44px;
+  height: 42px;
+  flex-shrink: 0;
+}
+
+.title{
+  text-align: center;
+  font-family: Inter;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px; /* 60% */
+  text-transform: lowercase;
+}
+
+.items{
+  display: inline-flex;
+  padding: 12px 5px;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 50px;
+  align-items: center;
+}
+
+.item{
+  text-align: center;
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px; /* 75% */
+  text-transform: uppercase;
+}
+
+.mode{
+  width: 30px;
+  height: 30px;
+}
+
+.banner{
+  display: flex;
+  gap:174px;
+  margin-top: 184px;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 44px;
+}
+
+.headText{
+  font-family: Neue Montreal;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+}
+
+.subText{
+  font-family: Lato;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.4px; 
+}
+
+.button-dark{
+  width: 225px;
+  height: 64px;
+  border-radius: 30px;
+  background: #8075FF;
+  box-shadow: 0px 10.899999618530273px 7.239999771118164px 0px rgba(0, 0, 0, 0.18), 0px 26.200000762939453px 19.09000015258789px 0px rgba(0, 0, 0, 0.28), 0px 49.33000183105469px 35.939998626708984px 0px rgba(0, 0, 0, 0.37), 0px 88.01000213623047px 64.11000061035156px 0px rgba(0, 0, 0, 0.47), 0px 164.60000610351562px 119.9000015258789px 0px rgba(0, 0, 0, 0.61), 0px 394px 250px 0px rgba(0, 0, 0, 0.95);
+  color: #000;
+  font-family: Lato;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 17px */
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-light{
+  width: 225px;
+  height: 64px;
+  border-radius: 30px;
+  background: #A9C2E8;
+  box-shadow: 0px 10.899999618530273px 7.239999771118164px 0px rgba(110, 139, 151, 0.18), 0px 26.200000762939453px 19.09000015258789px 0px rgba(110, 139, 151, 0.28), 0px 49.33000183105469px 35.939998626708984px 0px rgba(110, 139, 151, 0.37), 0px 88.01000213623047px 64.11000061035156px 0px rgba(110, 139, 151, 0.47), 0px 164.60000610351562px 119.9000015258789px 0px rgba(110, 139, 151, 0.61), 0px 394px 250px 0px rgba(110, 139, 151, 0.95);
+  color: #333;
+  font-family: Lato;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 17px */
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.darkSource{
+  position: absolute;
+  width:100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  top:-960px;
+  z-index: 2;
+  transition: all 1.5s ease-in-out;
+}
+
+.darkEllipse1{
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1400px;
+  height: 1400px;
+  border-radius: 1400px;
+  background: linear-gradient(180deg, #171E38 0%, rgba(34, 51, 109, 0.00) 100%);
+}
+
+.darkEllipse2{
+  width: 1100px;
+  height: 1100px;
+  border-radius: 1100px;
+  background: rgba(34, 51, 109, 0.30);
+}
+
+.dark{
+  background: linear-gradient(134deg, #1F284A 0%, #070B17 100%);
+  color: #FFF;
+}
+
+.light{
+  background: linear-gradient(134deg, #E8F0FD 0%, #FFF 100%);
+  color: #444;
+}
+
+.lightEllipse1{
+  background: linear-gradient(180deg, #FFD700 0%, rgba(255, 255, 255, 0.00) 100%);
+  box-shadow: 0px -50px 100px 0px rgba(255, 234, 128, 0.50), -10px 0px 20px 0px rgba(255, 234, 128, 0.50), 10px 0px 20px 0px rgba(255, 234, 128, 0.50);
+}
+
+.lightEllipse2{
+  background: rgba(255, 234, 128, 0.30);
+}
+
+.lightSource{
+  transition: all 2s ease-in-out;
+  transform: translateY(1650px);
+  z-index: 2;
+}
